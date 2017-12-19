@@ -12,4 +12,4 @@ install:
   - ./provision.sh
 
 script:
-  - pygmy status
+  - pygmy up
