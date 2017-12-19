@@ -12,7 +12,11 @@ Vagrant.configure("2") do |config|
     id: "default", :nfs => true, :mount_options => ["nolock,vers=3,udp"]
 
   config.vm.provision "shell",
-    path: "./provision.sh"
+    path: "./provision.sh",
+    privileged: false,
+    env: {
+        "PYGMY_VM_USER" => "vagrant"
+    }
 
   # Virtual Box-specific configuration.
   config.vm.provider :virtualbox do |vb|
