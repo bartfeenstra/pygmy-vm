@@ -14,7 +14,7 @@ This project provides a Virtual Machine for Amazee.io's
 ## Usage
 Start the VM with `vagrant up --provider=virtualbox`.
 
-After rebooting the VM, Pygmy must be started manually using `pygmy start`.
+After booting the VM, Pygmy must be started manually using `pygmy start`.
 
 ### SSH key
 To configure the Pygmy SSH key, copy it to `/home/vagrant/.ssh/id_rsa` inside the VM.
