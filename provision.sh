@@ -22,12 +22,9 @@ then
     git pull
 else
     git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+    export PATH="$HOME/.rbenv/bin:$PATH"
     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
     echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-    export PATH="$HOME/.rbenv/bin:$PATH"
-    echo $PATH
-    rbenv init -
-    source ~/.bash_profile
 fi
 
 # Install ruby-build.
