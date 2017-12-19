@@ -7,7 +7,7 @@ before_install:
   - chmod ug+x ./provision.sh
 
 install:
-  - ./provision.sh
+  - bash ./provision.sh
 
 script:
   - pygmy status
