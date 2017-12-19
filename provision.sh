@@ -15,7 +15,6 @@ sudo apt-get -y install docker-ce
 sudo usermod -a -G docker $PYGMY_VM_USER
 
 # Install rbenv.
-RBENV_PATH="/opt/rbenv"
 if [ -d ~/.rbenv ]
 then
     cd ~/.rbenv
