@@ -1,5 +1,7 @@
 sudo: required
 
+language: generic
+
 env:
   - PYGMY_VM_USER=$USER
 
