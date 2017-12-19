@@ -45,4 +45,4 @@ rbenv global 2.4.2
 
 # Install Pygmy.
 gem install pygmy
-pygmy up
+sudo pygmy up
