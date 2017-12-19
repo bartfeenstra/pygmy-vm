@@ -5,7 +5,7 @@
 This project provides a Virtual Machine for Amazee.io's
 [Pygmy](https://docs.amazee.io/local_docker_development/pygmy.html). Specifically:
 - Pygmy will not interfere with DNS resolvers on your host machine, but with those in the VM instead.
-- Pygmy and Docker come pre-installed.
+- Pygmy, [Docker](https://www.docker.com/), and [Docker Compose](https://docs.docker.com/compose/) come pre-installed.
 
 ## Requirements
 - [Vagrant](https://www.vagrantup.com/) >= 2.0.0
