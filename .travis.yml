@@ -1,0 +1,8 @@
+before_install:
+  - chmod ug+x ./provision.sh
+
+install:
+  - ./provision.sh
+
+script:
+  - echo "So far, so good..."
