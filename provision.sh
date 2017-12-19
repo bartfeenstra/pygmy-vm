@@ -24,11 +24,8 @@ else
     git clone https://github.com/rbenv/rbenv.git ~/.rbenv
     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
     echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-    . ~/.bash_profile
+    source ~/.bash_profile
 fi
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-. ~/.bashrc
 
 # Install ruby-build.
 if [ -d ~/.rbenv/plugins/ruby-build ]
