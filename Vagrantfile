@@ -8,8 +8,6 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "pygmy-vm"
   config.vm.network :private_network,
     ip: "192.168.152.7"
-  config.vm.synced_folder "./projects", "/pygmy-vm/projects",
-    id: "default", :nfs => true, :mount_options => ["nolock,vers=3,udp"]
 
   config.vm.provision "shell",
     path: "./provision.sh",
