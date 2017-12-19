@@ -1,0 +1,15 @@
+sudo: required
+
+language: generic
+
+env:
+  - PYGMY_VM_USER=$USER
+
+before_install:
+  - chmod ug+x ./provision.sh
+
+install:
+  - ./provision.sh
+
+script:
+  - pygmy up
