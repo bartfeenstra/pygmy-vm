@@ -22,6 +22,7 @@ then
     git pull
 else
     git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+    # Export the path explicitly, because on Travis CI sourcing is impossible.
     export PATH="$HOME/.rbenv/bin:$PATH"
     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
     echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
