@@ -8,8 +8,8 @@ env:
 before_install:
   - chmod ug+x ./provision.sh
 
-install:
-  - ./provision.sh
-
 script:
+  - ./provision.sh
+  # Re-provision to test for idempotency.
+  - ./provision.sh
   - pygmy up
